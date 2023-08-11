@@ -1,6 +1,6 @@
-package ua.com.level.tests;
+package ua.com.level.testing;
 
-public class dokapopa {
+public class Dokapopa {
     public void print(String str){
         System.out.println(str);
     }

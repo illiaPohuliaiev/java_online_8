@@ -1,2 +1,2 @@
-javac dokakoka.java
-java dokakoka
+javac Dokakoka.java
+java Dokakoka

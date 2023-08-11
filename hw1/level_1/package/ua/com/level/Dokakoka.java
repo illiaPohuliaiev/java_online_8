@@ -3,7 +3,7 @@ package ua.com.level;
 public class dokakoka {
 
     public static void main(String[] args) {
-        Printer p = new Printer();
+        dokapopa p = new dokapopa();
         byte b = Byte.MAX_VALUE;
         byte b1 = Byte.MIN_VALUE;
         short s = Short.MAX_VALUE;
