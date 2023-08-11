@@ -1,0 +1,2 @@
+Main-Class: ua.com.level.dokakoka
+Class-Path: ../../lib/commons-math3-3.6.1.jar
