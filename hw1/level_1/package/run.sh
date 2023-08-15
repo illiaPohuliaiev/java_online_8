@@ -1,2 +1,2 @@
-javac ua/com/level/Dokakoka.java
-java ua/com/level/Dokakoka
+javac ua/com/level/HelloTwo.java
+java ua/com/level/HelloTwo

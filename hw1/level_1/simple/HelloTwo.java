@@ -1,4 +1,4 @@
-public class Dokakoka {
+public class HelloTwo {
 
     public static void main(String[] args) {
 

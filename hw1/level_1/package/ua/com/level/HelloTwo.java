@@ -1,7 +1,9 @@
-public class Dokakoka {
+package ua.com.level;
+
+public class HelloTwo {
 
     public static void main(String[] args) {
-        Dokapopa p = new Dokapopa();
+        MessageTwo p = new MessageTwo();
         byte b = Byte.MAX_VALUE;
         byte b1 = Byte.MIN_VALUE;
         short s = Short.MAX_VALUE;

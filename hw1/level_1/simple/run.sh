@@ -1,2 +1,2 @@
-javac Dokakoka.java
-java Dokakoka
+javac HelloTwo.java
+java HelloTwo

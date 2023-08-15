@@ -1,0 +1,3 @@
+Main-Class: ua.com.alevel.HelloTwo
+Class-Path: ../../libs/commons-lang3-3.12.0.jar
+

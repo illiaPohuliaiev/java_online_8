@@ -1,6 +1,6 @@
 package ua.com.level;
 
-public class Dokapopa {
+public class MessageTwo {
     void print(String str){
         System.out.println(str);
     }

@@ -1,9 +1,9 @@
 package ua.com.level;
-import ua.com.level.testing.Dokapopa;
-public class Dokakoka {
+import ua.com.level.testing.MessageTwo;
+public class HelloTwo {
 
     public static void main(String[] args) {
-        Dokapopa p = new Dokapopa();
+        MessageTwo p = new MessageTwo();
         byte b = Byte.MAX_VALUE;
         byte b1 = Byte.MIN_VALUE;
         short s = Short.MAX_VALUE;
