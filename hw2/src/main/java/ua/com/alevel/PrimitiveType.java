@@ -3,7 +3,7 @@ package ua.com.alevel;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-public class PrimitiveTypes {
+public class PrimitiveType {
 
     public void test() {
         byte bMax = Byte.MAX_VALUE;
