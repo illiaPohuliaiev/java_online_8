@@ -4,10 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main
-          {
-    public static void main(String[] args) throws IOException
-          {
+public class Main {
+    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         // на 1st лепим 1w4tt!7 и получаем 12
         System.out.println("Please enter line for 1st task");
@@ -25,5 +23,5 @@ public class Main
         System.out.println("Please enter number of lessons for 3d task");
         String lesson = bufferedReader.readLine();
         Service.number3(Integer.valueOf(lesson));
-         }
-         }
+    }
+}
