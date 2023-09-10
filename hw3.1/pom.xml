@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>hw2.1</artifactId>
+    <groupId>org.hw3</groupId>
+    <artifactId>hw_3_crud</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,15 +14,17 @@
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
+            <version>3.13.0</version>
         </dependency>
     </dependencies>
+
     <build>
-        <finalName>Base_operations</finalName>
+        <finalName>crud</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -56,4 +58,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
