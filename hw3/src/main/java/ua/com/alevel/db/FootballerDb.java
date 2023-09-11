@@ -23,18 +23,17 @@ public class FootballerDb {
         }
     }
 
-    public void add(Footballer footballer) {
+    private void add(Footballer footballer) { // якщо метод використовються тільки в середині класу - роби його пріват
         footballer.setId(String.valueOf(lastPlayerNumber + 1));
         footballers[lastPlayerNumber] = footballer;
         lastPlayerNumber++;
     }
 
-
     public Footballer[] findAll() {
         return footballers;
     }
 
-    public Footballer findOne(String id) throws IOException {
+    public Footballer findOne(String id) {
         int k = 0;
         for (int i = 0; i < footballers.length; i++) {
             if (footballers[i] != null) {
@@ -68,7 +67,7 @@ public class FootballerDb {
         return footballers[k];
     }
 
-    public Footballer[] delete(String id) throws IOException {
+    public Footballer[] delete(String id) {
         int k = 0;
         for (int i = 0; i < this.footballers.length; i++) {
             if (this.footballers[i] != null) {
@@ -78,7 +77,6 @@ public class FootballerDb {
                 }
             }
         }
-        System.out.println("k = " + k);
         Footballer[] a = Arrays.copyOfRange(this.footballers, 0, k);
         Footballer[] b = Arrays.copyOfRange(this.footballers, k + 1, this.footballers.length);
         Footballer[] footballers = Arrays.copyOf(a, a.length + b.length + 1);
