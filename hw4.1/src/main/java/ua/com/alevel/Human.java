@@ -8,13 +8,14 @@ class Human {
         this.name = name;
     }
 
+    public boolean hasTakeMessage() {
+        return takeMessage;
+    }
+
     public String getName() {
         return name;
     }
 
-    public boolean hasTakeMessage() {
-        return takeMessage;
-    }
 
     public void sendMessage(Human receiver) {
         if (!takeMessage) {
