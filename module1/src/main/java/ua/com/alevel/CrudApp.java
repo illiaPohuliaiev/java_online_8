@@ -46,11 +46,11 @@ public class CrudApp {
         while (true) {
             System.out.println("1. Create Car");
             System.out.println("2. Delete Car");
-            System.out.println("3. Create Car Dealerships");
-            System.out.println("4. Delete Car Dealerships");
-            System.out.println("5. Add cars to Car Dealerships");
-            System.out.println("6. Show all cars");
-            System.out.println("7. Show all Car Dealerships");
+            System.out.println("3. Show all cars");
+            System.out.println("4. Create Car Dealerships");
+            System.out.println("5. Delete Car Dealerships");
+            System.out.println("6. Show all Car Dealerships");
+            System.out.println("7. Add cars to Car Dealerships");
             System.out.println("8. Show cars in Car Dealerships");
             System.out.println("9. Close App");
 
@@ -66,15 +66,15 @@ public class CrudApp {
                     break;
                 case 2: deleteCar(reader);
                     break;
-                case 3: createCarDealerShip(reader);
+                case 3: listAllCars();
                     break;
-                case 4: deleteCarDealerShip(reader);
+                case 4: createCarDealerShip(reader);
                     break;
-                case 5: addCarsToCarDealerShip(reader);
+                case 5: deleteCarDealerShip(reader);
                     break;
-                case 6: listAllCars();
+                case 6: listAllCarDealerShips();
                     break;
-                case 7: listAllCarDealerShips();
+                case 7: addCarsToCarDealerShip(reader);
                     break;
                 case 8: listCarsInCarDealerShip(reader);
                     break;
