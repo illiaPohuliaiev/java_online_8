@@ -24,7 +24,7 @@
     </dependencies>
 
     <build>
-        <finalName>six_degrees_separation</finalName>
+        <finalName>hw4.1</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
