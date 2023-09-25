@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 public class Handshaking {
     public static void main(String[] args) {
         Human[] human = createHuman();
@@ -19,7 +20,9 @@ public class Handshaking {
                 human[i].sendMessage(human[i + 1]);
             }
 
-        }  while (!human[5].hasTakeMessage()); {
-                }
-            }
+        } while (!human[5].hasTakeMessage());
+        {
+            // а що цей вайл робить?
         }
+    }
+}

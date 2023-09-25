@@ -19,6 +19,7 @@ public class CrudApp {
         System.arraycopy(cars, 0, newArray, 0, carCount);
         cars = newArray;
     }
+
     private static boolean isNumeric(String str) {
         for (char c : str.toCharArray()) {
             if (!Character.isDigit(c)) {
@@ -27,6 +28,7 @@ public class CrudApp {
         }
         return !str.isEmpty();
     }
+
     private static void listAllCarDealerShips() {
         System.out.println("Car dealership list:");
         for (int i = 0; i < cardealershipCount; i++) {
@@ -34,12 +36,14 @@ public class CrudApp {
             System.out.println("ID: " + carDealerShip.getId() + ", Name: " + carDealerShip.getName());
         }
     }
+
     private static void resizeCarDealerShipsArray() {
         int newSize = carDealerShips.length * 2;
         CarDealerShip[] newArray = new CarDealerShip[newSize];
         System.arraycopy(carDealerShips, 0, newArray, 0, cardealershipCount);
         carDealerShips = newArray;
     }
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -62,28 +66,39 @@ public class CrudApp {
                 continue;
             }
             switch (choice) {
-                case 1: createCar(reader);
+                case 1:
+                    createCar(reader);
                     break;
-                case 2: deleteCar(reader);
+                case 2:
+                    deleteCar(reader);
                     break;
-                case 3: listAllCars();
+                case 3:
+                    listAllCars();
                     break;
-                case 4: createCarDealerShip(reader);
+                case 4:
+                    createCarDealerShip(reader);
                     break;
-                case 5: deleteCarDealerShip(reader);
+                case 5:
+                    deleteCarDealerShip(reader);
                     break;
-                case 6: listAllCarDealerShips();
+                case 6:
+                    listAllCarDealerShips();
                     break;
-                case 7: addCarsToCarDealerShip(reader);
+                case 7:
+                    addCarsToCarDealerShip(reader);
                     break;
-                case 8: listCarsInCarDealerShip(reader);
+                case 8:
+                    listCarsInCarDealerShip(reader);
                     break;
-                case 9: System.exit(0);
+                case 9:
+                    System.exit(0);
                     break;
-                default: System.out.println("ERROR. Try one more.");
+                default:
+                    System.out.println("ERROR. Try one more.");
             }
         }
     }
+
     private static void createCar(BufferedReader reader) throws IOException {
         if (carCount == cars.length) {
             resizeCarsArray();
@@ -95,6 +110,7 @@ public class CrudApp {
         carCounter++;
         System.out.println("Car is created.");
     }
+
     private static void deleteCar(BufferedReader reader) throws IOException {
         listAllCars();
         System.out.print("Please enter car ID, which you want to delete: ");
