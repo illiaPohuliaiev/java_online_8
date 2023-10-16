@@ -74,12 +74,14 @@ public class Dictionary<K, V> {
         }
         return false;
     }
+
     public boolean clear() {
         keys = new Object[DEFAULT_CAPACITY];
         values = new Object[DEFAULT_CAPACITY];
         size = 0;
         return true;
     }
+
     public boolean putAll(Dictionary<K, V> otherDictionary) {
         boolean modified = false;
         for (int i = 0; i < otherDictionary.size(); i++) {
@@ -104,11 +106,13 @@ public class Dictionary<K, V> {
         System.arraycopy(values, 0, valueArray, 0, size);
         return valueArray;
     }
+
     private Object[] resizeArray(Object[] array, int newSize) {
         Object[] newArray = new Object[newSize];
         System.arraycopy(array, 0, newArray, 0, Math.min(array.length, newSize));
         return newArray;
     }
+
     private void ensureCapacity(int capacity) {
         if (capacity > keys.length) {
             int newCapacity = Math.max(capacity, keys.length * 2);

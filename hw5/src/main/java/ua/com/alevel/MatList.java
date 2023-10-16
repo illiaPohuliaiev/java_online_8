@@ -1,15 +1,14 @@
 package ua.com.alevel;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
 class MatList<E extends Number> {
     private static final int INITIAL_CAPACITY = 10;
     private E[] data;
     private int size;
-
 
     @SuppressWarnings("unchecked")
     public MatList() {
@@ -226,12 +225,12 @@ class MatList<E extends Number> {
     }
 
 
-
     public void print() {
         for (E element : data) {
             System.out.println(element);
         }
     }
+
     static int getUserInputInt(Scanner scanner) {
         while (true) {
             try {
