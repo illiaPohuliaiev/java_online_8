@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 import java.io.*;
 import java.nio.file.*;
 import java.util.Comparator;
@@ -16,6 +17,7 @@ public class FileHelp {
         directoryHistory = new Stack<>();
         directoryHistory.push(currentDirectory);
     }
+
     void listFilesAndFolders() {
         try {
             Files.list(Paths.get(currentDirectory))
@@ -96,11 +98,12 @@ public class FileHelp {
                 destination = destination.resolve(source.getFileName());
                 Files.move(source, destination, StandardCopyOption.REPLACE_EXISTING);
                 System.out.println("Папку переміщено в: " + destination);
-            } else;
+            } else ;
         } catch (IOException e) {
             System.out.println("ERROR. Спробуйте ще раз: " + e.getMessage());
         }
     }
+
     void moveFileToFolder(Scanner scanner) {
         System.out.print("Введіть назву файлу для переміщення: ");
         String fileName = scanner.nextLine();
