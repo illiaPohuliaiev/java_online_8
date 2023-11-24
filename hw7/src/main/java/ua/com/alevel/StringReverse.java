@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 public class StringReverse {
     public static String reverse(String src) {
         String newSrc = "";
@@ -8,6 +9,7 @@ public class StringReverse {
         }
         return newSrc;
     }
+
     public static String reverse(String src, int firstIndex, int lastIndex) {
         String newSrc = "";
         int counter = 0;
@@ -27,6 +29,7 @@ public class StringReverse {
         }
         return newSrc;
     }
+
     public static String reverse(String src, String dest) {
         String newSrc = "";
         int counter = 0;

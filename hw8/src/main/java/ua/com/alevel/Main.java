@@ -2,7 +2,7 @@ package ua.com.alevel;
 
 import java.util.Scanner;
 
-public class Main extends FileHelp{
+public class Main extends FileHelp {
     public void main() {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
